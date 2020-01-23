@@ -1,0 +1,3 @@
+ Prova di scrittura su file rova di nome
+iprova
+nome3
