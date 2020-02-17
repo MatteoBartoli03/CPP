@@ -29,7 +29,7 @@ int main() {
 	for (int i=0; i<stinput.length(); i++)
         stinput[i] = tolower(stinput[i]);
 	
-	chiave = INS_INT("Il messaggio che verrà criptato è quello presente nel file cpp-input.txt e sarà criptato in lower case\nInserisci la chiave di criptazione: ");
+	chiave = INS_INT("Inserisci la chiave di criptazione con cui criptare il file cpp-input.txt: ");
 	while (true){
 		if (chiave > 25) {
 			chiave -= 25;
