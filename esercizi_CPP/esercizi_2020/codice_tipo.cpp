@@ -4,14 +4,21 @@
 using namespace std;
 
 void leggi_vettore(int vettore[]);
-void visualizza(int vettore[]);
-void azzera(int vettore[]);
+void visualizza(int vettore[], int lunghezza);
+//void azzera(int vettore[]);
 
 int main()
 {
 	int vettore[DIMENSIONE], vettore2[DIMENSIONE];
 	leggi_vettore(vettore);
-	azzera(vettore2);
+	//azzera(vettore2);
+	
+	// se percaso può essere che nel vettore finale ci siano degli 
+	// elementi pari a zero, crea un contatore nel for che usi per
+	// aggiungere i valori al vettore2 e poi stampa quel vettore fino al contatotore
+	
+	// quindi la funzione azzera è alternativa al visualizza con
+	// lunghezza uguale al contatore determinato durante il ciclo
 	
 	cout << "vettore iniziale: ";
 	visualizza(vettore);
@@ -20,7 +27,7 @@ int main()
 
 }
 
-void visualizza(int vettore[])
+void visualizza(int vettore[], int lunghezza = DIMENSIONE)
 {
 	for(int i=0; i<DIMENSIONE; i++) {
 		if (vettore[i]!=0) {
@@ -51,9 +58,9 @@ void leggi_vettore(int vettore[])
 	}
 }
 
-void azzera(int vettore[])
+/*void azzera(int vettore[])
 {
 	for(int i=0; i<DIMENSIONE; i++) {
 		vettore[i]=0;
 	}
-}
+}*/
